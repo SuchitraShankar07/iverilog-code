@@ -1,0 +1,284 @@
+$date
+	Thu Aug 29 23:30:16 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module tb $end
+$var wire 4 ! o [3:0] $end
+$var wire 1 " cout $end
+$var reg 1 # cin $end
+$var reg 1 $ clk $end
+$var reg 4 % i0 [3:0] $end
+$var reg 4 & i1 [3:0] $end
+$var reg 1 ' reset $end
+$var integer 32 ( i [31:0] $end
+$scope module u0 $end
+$var wire 4 ) a [3:0] $end
+$var wire 4 * b [3:0] $end
+$var wire 1 # cin $end
+$var wire 4 + sum [3:0] $end
+$var wire 1 , cout2 $end
+$var wire 1 - cout1 $end
+$var wire 1 . cout0 $end
+$var wire 1 " cout $end
+$scope module u0 $end
+$var wire 1 / a $end
+$var wire 1 0 b $end
+$var wire 1 # cin $end
+$var wire 1 1 sum $end
+$var wire 1 . cout $end
+$upscope $end
+$scope module u1 $end
+$var wire 1 2 a $end
+$var wire 1 3 b $end
+$var wire 1 . cin $end
+$var wire 1 4 sum $end
+$var wire 1 - cout $end
+$upscope $end
+$scope module u2 $end
+$var wire 1 5 a $end
+$var wire 1 6 b $end
+$var wire 1 - cin $end
+$var wire 1 7 sum $end
+$var wire 1 , cout $end
+$upscope $end
+$scope module u3 $end
+$var wire 1 8 a $end
+$var wire 1 9 b $end
+$var wire 1 , cin $end
+$var wire 1 : sum $end
+$var wire 1 " cout $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+b0 +
+b0 *
+b0 )
+b0 (
+1'
+b0 &
+b0 %
+0$
+0#
+0"
+b0 !
+$end
+#50
+1$
+#100
+0$
+#125
+0'
+#150
+1$
+#160
+b1 (
+#200
+0$
+#250
+1$
+#260
+b1 !
+b1 +
+11
+b10 (
+1#
+#300
+0$
+#350
+1$
+#360
+14
+1.
+b10 !
+b10 +
+01
+1/
+10
+b11 (
+b1 %
+b1 )
+b1 &
+b1 *
+0#
+#400
+0$
+#450
+1$
+#460
+b11 !
+b11 +
+11
+b100 (
+1#
+#500
+0$
+#550
+1$
+#560
+04
+17
+0.
+1-
+b100 !
+b100 +
+01
+0/
+12
+00
+13
+b101 (
+b10 %
+b10 )
+b10 &
+b10 *
+0#
+#600
+0$
+#650
+1$
+#660
+b101 !
+b101 +
+1"
+11
+18
+10
+19
+b110 (
+b1010 %
+b1010 )
+b1011 &
+b1011 *
+#700
+0$
+#750
+1$
+#760
+14
+b110 !
+b110 +
+01
+1.
+b111 (
+1#
+#800
+0$
+#850
+1$
+#860
+07
+1:
+0-
+04
+1,
+b1001 !
+b1001 +
+11
+0.
+02
+15
+03
+16
+b1000 (
+b1100 %
+b1100 )
+b1101 &
+b1101 *
+0#
+#900
+0$
+#950
+1$
+#960
+b1101 !
+b1101 +
+17
+1-
+1/
+12
+00
+13
+b1001 (
+b1111 %
+b1111 )
+b1110 &
+b1110 *
+#1000
+0$
+#1050
+1$
+#1060
+14
+b1110 !
+b1110 +
+01
+1.
+b1010 (
+1#
+#1100
+0$
+#1150
+1$
+#1200
+0$
+#1250
+1$
+#1300
+0$
+#1350
+1$
+#1400
+0$
+#1450
+1$
+#1500
+0$
+#1550
+1$
+#1600
+0$
+#1650
+1$
+#1700
+0$
+#1750
+1$
+#1800
+0$
+#1850
+1$
+#1900
+0$
+#1950
+1$
+#2000
+0$
+#2050
+1$
+#2060

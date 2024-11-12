@@ -1,0 +1,136 @@
+$date
+	Fri Aug 23 12:09:00 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module xor2_tb $end
+$var wire 1 ! ss $end
+$var wire 1 " cy $end
+$var reg 1 # aa $end
+$var reg 1 $ bb $end
+$var reg 1 % cc $end
+$scope module uut $end
+$var wire 1 # a $end
+$var wire 1 $ b $end
+$var wire 1 % cin $end
+$var wire 5 & t [4:0] $end
+$var wire 1 ! sum $end
+$var wire 1 " cout $end
+$scope module a0 $end
+$var wire 1 # i0 $end
+$var wire 1 $ i1 $end
+$var wire 1 ' o2 $end
+$upscope $end
+$scope module a1 $end
+$var wire 1 # i0 $end
+$var wire 1 % i1 $end
+$var wire 1 ( o2 $end
+$upscope $end
+$scope module a2 $end
+$var wire 1 $ i0 $end
+$var wire 1 % i1 $end
+$var wire 1 ) o2 $end
+$upscope $end
+$scope module o0 $end
+$var wire 1 * i0 $end
+$var wire 1 + i1 $end
+$var wire 1 , o2 $end
+$upscope $end
+$scope module o1 $end
+$var wire 1 - i0 $end
+$var wire 1 . i1 $end
+$var wire 1 " o2 $end
+$upscope $end
+$scope module x0 $end
+$var wire 1 # i0 $end
+$var wire 1 $ i1 $end
+$var wire 1 / o4 $end
+$upscope $end
+$scope module x1 $end
+$var wire 1 0 i0 $end
+$var wire 1 % i1 $end
+$var wire 1 ! o4 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+b0 &
+0%
+0$
+0#
+0"
+0!
+$end
+#5
+1!
+1%
+#10
+10
+b1 &
+1!
+1/
+0%
+1$
+#15
+1"
+1-
+b1001 &
+1)
+0!
+1%
+#20
+0"
+0-
+b1 &
+1!
+0)
+0%
+0$
+1#
+#25
+1"
+1.
+1,
+1+
+b10101 &
+1(
+0!
+1%
+#30
+0+
+1*
+00
+b10010 &
+0(
+0!
+1'
+0/
+0%
+1$
+#35
+1-
+1+
+b11110 &
+1(
+1)
+1!
+1%

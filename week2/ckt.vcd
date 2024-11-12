@@ -1,0 +1,64 @@
+$date
+	Fri Aug 16 12:41:15 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_ckt $end
+$var wire 1 ! Z $end
+$var wire 1 " D $end
+$var reg 1 # A2 $end
+$var reg 1 $ B2 $end
+$var reg 1 % C2 $end
+$scope module M1 $end
+$var wire 1 # A2 $end
+$var wire 1 $ B2 $end
+$var wire 1 % C2 $end
+$var wire 1 " D $end
+$var wire 1 ! Z $end
+$var wire 1 & w1 $end
+$var wire 1 ' w2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#20
+1%
+#40
+0%
+1$
+#60
+1!
+1"
+1&
+1%
+#80
+0&
+0%
+0$
+1#
+#100
+1%
+#120
+1'
+0%
+1$
+#140
+1&
+1%
+#200

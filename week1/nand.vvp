@@ -1,0 +1,66 @@
+#! /usr/bin/vvp
+:ivl_version "13.0 (devel)" "(s20221226-533-g676b36e45)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/ivl/system.vpi";
+:vpi_module "/usr/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/ivl/va_math.vpi";
+S_0x556b0b51d330 .scope module, "and_val" "and_val" 2 1;
+ .timescale 0 0;
+v0x556b0b5304f0_0 .var "a", 0 0;
+v0x556b0b5305c0_0 .var "b", 0 0;
+v0x556b0b530690_0 .net "c", 0 0, L_0x556b0b5308d0;  1 drivers
+S_0x556b0b51d4c0 .scope module, "and_val" "and2" 2 4, 3 1 0, S_0x556b0b51d330;
+ .timescale 0 0;
+    .port_info 0 /OUTPUT 1 "c";
+    .port_info 1 /INPUT 1 "a";
+    .port_info 2 /INPUT 1 "b";
+L_0x556b0b530790 .functor XOR 1, v0x556b0b5304f0_0, v0x556b0b5305c0_0, C4<0>, C4<0>;
+v0x556b0b4e44c0_0 .net *"_ivl_0", 0 0, L_0x556b0b530790;  1 drivers
+v0x556b0b530250_0 .net "a", 0 0, v0x556b0b5304f0_0;  1 drivers
+v0x556b0b530310_0 .net "b", 0 0, v0x556b0b5305c0_0;  1 drivers
+v0x556b0b5303b0_0 .net "c", 0 0, L_0x556b0b5308d0;  alias, 1 drivers
+L_0x556b0b5308d0 .reduce/nor L_0x556b0b530790;
+    .scope S_0x556b0b51d330;
+T_0 ;
+    %delay 0, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x556b0b5304f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x556b0b5305c0_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x556b0b5304f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x556b0b5305c0_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x556b0b5304f0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x556b0b5305c0_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x556b0b5304f0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x556b0b5305c0_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x556b0b51d330;
+T_1 ;
+    %vpi_call 2 16 "$monitor", $time, "a=%b, b=%b, c=%b", v0x556b0b5304f0_0, v0x556b0b5305c0_0, v0x556b0b530690_0 {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x556b0b51d330;
+T_2 ;
+    %vpi_call 2 20 "$dumpfile", "and_val.vcd" {0 0 0};
+    %vpi_call 2 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x556b0b51d4c0 {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "and_val.v";
+    "comp.v";

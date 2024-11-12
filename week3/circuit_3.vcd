@@ -1,0 +1,225 @@
+$date
+	Wed Sep  4 23:31:09 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 1 ! sum1 $end
+$var wire 1 " cout1 $end
+$var reg 3 # i1 [2:0] $end
+$var reg 1 $ i2 $end
+$var integer 32 % i [31:0] $end
+$scope module circuit3_0 $end
+$var wire 3 & i1 [0:2] $end
+$var wire 1 $ i2 $end
+$var wire 1 ' x2 $end
+$var wire 1 ( x1 $end
+$var wire 1 ! sum1 $end
+$var wire 1 " cout1 $end
+$scope module fa_1 $end
+$var wire 1 ) cin $end
+$var wire 1 * i0 $end
+$var wire 1 + i1 $end
+$var wire 1 , io $end
+$var wire 1 - t2 $end
+$var wire 1 . t1 $end
+$var wire 1 / t0 $end
+$var wire 1 ( sum $end
+$var wire 1 ' cout $end
+$scope module and2_i1 $end
+$var wire 1 * i0 $end
+$var wire 1 + i1 $end
+$var wire 1 / o $end
+$upscope $end
+$scope module and2_i2 $end
+$var wire 1 + i0 $end
+$var wire 1 ) i1 $end
+$var wire 1 . o $end
+$upscope $end
+$scope module and2_i3 $end
+$var wire 1 ) i0 $end
+$var wire 1 * i1 $end
+$var wire 1 - o $end
+$upscope $end
+$scope module or3_i4 $end
+$var wire 1 / i0 $end
+$var wire 1 . i1 $end
+$var wire 1 - i2 $end
+$var wire 1 0 t $end
+$var wire 1 ' o $end
+$scope module or2_0 $end
+$var wire 1 / i0 $end
+$var wire 1 . i1 $end
+$var wire 1 0 o $end
+$upscope $end
+$scope module or2_1 $end
+$var wire 1 - i0 $end
+$var wire 1 0 i1 $end
+$var wire 1 ' o $end
+$upscope $end
+$upscope $end
+$scope module xor3_i0 $end
+$var wire 1 , i0 $end
+$var wire 1 + i1 $end
+$var wire 1 ) i2 $end
+$var wire 1 1 t $end
+$var wire 1 ( o $end
+$scope module xor2_0 $end
+$var wire 1 , i0 $end
+$var wire 1 + i1 $end
+$var wire 1 1 o $end
+$upscope $end
+$scope module xor2_1 $end
+$var wire 1 ) i0 $end
+$var wire 1 1 i1 $end
+$var wire 1 ( o $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module fa_2 $end
+$var wire 1 $ cin $end
+$var wire 1 ( i0 $end
+$var wire 1 ' i1 $end
+$var wire 1 2 io $end
+$var wire 1 3 t2 $end
+$var wire 1 4 t1 $end
+$var wire 1 5 t0 $end
+$var wire 1 ! sum $end
+$var wire 1 " cout $end
+$scope module and2_i1 $end
+$var wire 1 ( i0 $end
+$var wire 1 ' i1 $end
+$var wire 1 5 o $end
+$upscope $end
+$scope module and2_i2 $end
+$var wire 1 ' i0 $end
+$var wire 1 $ i1 $end
+$var wire 1 4 o $end
+$upscope $end
+$scope module and2_i3 $end
+$var wire 1 $ i0 $end
+$var wire 1 ( i1 $end
+$var wire 1 3 o $end
+$upscope $end
+$scope module or3_i4 $end
+$var wire 1 5 i0 $end
+$var wire 1 4 i1 $end
+$var wire 1 3 i2 $end
+$var wire 1 6 t $end
+$var wire 1 " o $end
+$scope module or2_0 $end
+$var wire 1 5 i0 $end
+$var wire 1 4 i1 $end
+$var wire 1 6 o $end
+$upscope $end
+$scope module or2_1 $end
+$var wire 1 3 i0 $end
+$var wire 1 6 i1 $end
+$var wire 1 " o $end
+$upscope $end
+$upscope $end
+$scope module xor3_i0 $end
+$var wire 1 2 i0 $end
+$var wire 1 ' i1 $end
+$var wire 1 $ i2 $end
+$var wire 1 7 t $end
+$var wire 1 ! o $end
+$scope module xor2_0 $end
+$var wire 1 2 i0 $end
+$var wire 1 ' i1 $end
+$var wire 1 7 o $end
+$upscope $end
+$scope module xor2_1 $end
+$var wire 1 $ i0 $end
+$var wire 1 7 i1 $end
+$var wire 1 ! o $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+x7
+06
+05
+04
+03
+z2
+x1
+00
+0/
+0.
+0-
+z,
+0+
+0*
+0)
+x(
+0'
+b0 &
+b0 %
+0$
+b0 #
+0"
+x!
+$end
+#10
+b1 %
+#20
+x"
+1)
+x3
+b10 %
+b1 #
+b1 &
+1$
+#30
+0"
+1+
+0)
+03
+b11 %
+b10 #
+b10 &
+0$
+#40
+16
+x5
+14
+1'
+10
+1.
+1"
+1)
+x3
+b100 %
+b11 #
+b11 &
+1$
+#50
+x'
+x0
+x"
+x/
+x.
+x-
+x6
+x*
+x+
+x)
+x4
+b101 %
+bx #
+bx &
+x$
+#60
+b110 %

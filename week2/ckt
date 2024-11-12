@@ -1,0 +1,116 @@
+#! /usr/bin/vvp
+:ivl_version "13.0 (devel)" "(s20221226-533-g676b36e45)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/ivl/system.vpi";
+:vpi_module "/usr/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/ivl/va_math.vpi";
+S_0x64b469686560 .scope module, "tb_ckt" "tb_ckt" 2 2;
+ .timescale 0 0;
+v0x64b4696d7a90_0 .var "A2", 0 0;
+v0x64b4696d7b50_0 .var "B2", 0 0;
+v0x64b4696d7c20_0 .var "C2", 0 0;
+v0x64b4696d7d20_0 .net "D", 0 0, L_0x64b4696d8020;  1 drivers
+v0x64b4696d7df0_0 .net "Z", 0 0, L_0x64b4696d81f0;  1 drivers
+S_0x64b4696866f0 .scope module, "M1" "ckt" 2 6, 3 1 0, S_0x64b469686560;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A2";
+    .port_info 1 /INPUT 1 "B2";
+    .port_info 2 /INPUT 1 "C2";
+    .port_info 3 /OUTPUT 1 "D";
+    .port_info 4 /OUTPUT 1 "Z";
+L_0x64b4696d7ee0 .functor AND 1, v0x64b4696d7c20_0, v0x64b4696d7b50_0, C4<1>, C4<1>;
+L_0x64b4696d8020 .functor OR 1, L_0x64b4696d7ee0, v0x64b4696d7a90_0, C4<0>, C4<0>;
+L_0x64b4696d8180 .functor AND 1, v0x64b4696d7a90_0, v0x64b4696d7b50_0, C4<1>, C4<1>;
+L_0x64b4696d81f0 .functor OR 1, L_0x64b4696d8020, L_0x64b4696d8180, C4<0>, C4<0>;
+v0x64b4696c3e40_0 .net "A2", 0 0, v0x64b4696d7a90_0;  1 drivers
+v0x64b4696d7540_0 .net "B2", 0 0, v0x64b4696d7b50_0;  1 drivers
+v0x64b4696d7600_0 .net "C2", 0 0, v0x64b4696d7c20_0;  1 drivers
+v0x64b4696d76a0_0 .net "D", 0 0, L_0x64b4696d8020;  alias, 1 drivers
+v0x64b4696d7760_0 .net "Z", 0 0, L_0x64b4696d81f0;  alias, 1 drivers
+v0x64b4696d7870_0 .net "w1", 0 0, L_0x64b4696d7ee0;  1 drivers
+v0x64b4696d7930_0 .net "w2", 0 0, L_0x64b4696d8180;  1 drivers
+    .scope S_0x64b469686560;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b4696d7a90_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b4696d7b50_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b4696d7c20_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b4696d7a90_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b4696d7b50_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b4696d7c20_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b4696d7a90_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b4696d7b50_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b4696d7c20_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b4696d7a90_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b4696d7b50_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b4696d7c20_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b4696d7a90_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b4696d7b50_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b4696d7c20_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b4696d7a90_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b4696d7b50_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b4696d7c20_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b4696d7a90_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b4696d7b50_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x64b4696d7c20_0, 0, 1;
+    %delay 20, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b4696d7a90_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b4696d7b50_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x64b4696d7c20_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x64b469686560;
+T_1 ;
+    %vpi_call 2 41 "$monitor", $time, "  A2 = %b, B2 = %b, C2 = %b, D = %b, Z=%b", v0x64b4696d7a90_0, v0x64b4696d7b50_0, v0x64b4696d7c20_0, v0x64b4696d7d20_0, v0x64b4696d7df0_0 {0 0 0};
+    %end;
+    .thread T_1;
+    .scope S_0x64b469686560;
+T_2 ;
+    %vpi_call 2 44 "$dumpfile", "ckt.vcd" {0 0 0};
+    %vpi_call 2 45 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x64b469686560 {0 0 0};
+    %end;
+    .thread T_2;
+    .scope S_0x64b469686560;
+T_3 ;
+    %delay 200, 0;
+    %vpi_call 2 49 "$finish" {0 0 0};
+    %end;
+    .thread T_3;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_ckt.v";
+    "ckt.v";
